@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="top-bar">
+        <h1>Simon Game</h1>
+        <button class="start-button" id="start-button" type="button">Start</button>
+      </div>
+
+      <div class="score-board" aria-label="Score board">
+        <p>Score <span id="score">0</span></p>
+        <p>High score <span id="high-score">0</span></p>
+      </div>
+
+      <p class="status" id="status">Press start</p>
+
+      <section class="simon-board" aria-label="Simon game board">
+        <button class="pad pad-1" type="button" data-pad="0" aria-label="Green pad">
+          <img src="img/cat-1.webp" alt="Gray kitten" />
+        </button>
+        <button class="pad pad-2" type="button" data-pad="1" aria-label="Red pad">
+          <img src="img/cat-2.png" alt="Calico cat" />
+        </button>
+        <button class="pad pad-3" type="button" data-pad="2" aria-label="Yellow pad">
+          <img src="img/cat-3.png" alt="Orange kitten" />
+        </button>
+        <button class="pad pad-4" type="button" data-pad="3" aria-label="Blue pad">
+          <img src="img/cat-4.png" alt="Black cat" />
+        </button>
+        <div class="center-display" id="round-display">Simon</div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
